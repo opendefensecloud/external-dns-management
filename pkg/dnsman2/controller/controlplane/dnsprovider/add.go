@@ -36,6 +36,7 @@ import (
 	azureprivate "github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/azure-private"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/cloudflare"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/google"
+	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/hetzner"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/mock"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/netlify"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/openstack"
@@ -54,6 +55,7 @@ var allTypes = map[string]provider.AddToRegistryFunc{
 	azureprivate.ProviderType: azureprivate.RegisterTo,
 	cloudflare.ProviderType:   cloudflare.RegisterTo,
 	google.ProviderType:       google.RegisterTo,
+	hetzner.ProviderType:      hetzner.RegisterTo,
 	netlify.ProviderType:      netlify.RegisterTo,
 	openstack.ProviderType:    openstack.RegisterTo,
 	rfc2136.ProviderType:      rfc2136.RegisterTo,
