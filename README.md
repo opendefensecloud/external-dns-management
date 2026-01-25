@@ -12,6 +12,7 @@ It contains provisioning controllers for creating DNS records in one of the DNS 
   - [_AliCloud DNS_](/docs/alicloud-dns/README.md),
   - [_Azure DNS_](/docs/azure-dns/README.md) and [_Azure Private_DNS_](/docs/azure-private-dns/README.md),
   - [_OpenStack Designate_](/docs/openstack-designate/README.md),
+  - [_Bunny DNS_](/docs/bunny/README.md),
   - [_Cloudflare DNS_](/docs/cloudflare/README.md),
   - [_Infoblox_](/docs/infoblox/README.md) *(deprecated - is not supported or maintained anymore. It will be removed end of 2025)*,
   - [_Netlify DNS_](docs/netlify/README.md),
@@ -544,6 +545,7 @@ The following provider types can be selected (comma separated):
 - `azure-dns`: Azure DNS provider
 - `google-clouddns`: Google CloudDNS provider
 - `openstack-designate`: Openstack Designate provider
+- `bunny-dns`: Bunny DNS provider
 - `cloudflare-dns`: Cloudflare DNS provider
 - `infoblox-dns`: Infoblox DNS provider
 - `netlify-dns`: Netlify DNS provider

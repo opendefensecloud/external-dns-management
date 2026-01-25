@@ -15,6 +15,7 @@ import (
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/aws"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/azure"
 	azureprivate "github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/azure-private"
+	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/bunny"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/cloudflare"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/google"
 	"github.com/gardener/external-dns-management/pkg/dnsman2/dns/provider/handler/local"
@@ -29,6 +30,7 @@ var allProviderTypes = map[string]provider.AddToRegistryFunc{
 	aws.ProviderType:          aws.RegisterTo,
 	azure.ProviderType:        azure.RegisterTo,
 	azureprivate.ProviderType: azureprivate.RegisterTo,
+	bunny.ProviderType:        bunny.RegisterTo,
 	cloudflare.ProviderType:   cloudflare.RegisterTo,
 	google.ProviderType:       google.RegisterTo,
 	local.ProviderType:        local.RegisterTo,
